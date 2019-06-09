@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="WordyWPF.UserControlShow1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WordyWPF"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto"
+             Background="Wheat"
+             >
+    <Grid>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <Button Content="This is a small button" Margin="10 10 10 10"/>
+
+                <TextBlock Text="Apenas" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                <StackPanel Margin="10">
+                    <TextBlock Text="R$ 28" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Calabresa" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
+                    <TextBlock Text="Com anéis de cebola" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                 </StackPanel>
+                </StackPanel>
+        </materialDesign:TransitioningContent>
+        
+       
+
+    </Grid>
+</UserControl>
